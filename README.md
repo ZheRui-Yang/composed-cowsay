@@ -22,7 +22,7 @@ First run this command
 $ docker compose up
 ```
 
-Then navigate your web browser to localhost:41062/www and enjoy the wisdom of cow!
+Then navigate your web browser to `localhost:41062/www` and enjoy the wisdom of cow!
 
 To close server, push \<Ctrl-C> to stop containers. After containers are stopped, use command below to teardown docker compose
 
