@@ -1,0 +1,10 @@
+services:
+  web:
+    image: "tomsik68/xampp:7"
+    ports:
+      - "41061:22"
+      - "41062:80"
+    volumes: 
+      - ./www:/www
+  sageofcow:
+    image: "flaskcow"

@@ -1,0 +1,29 @@
+# Docker composed fortune cowsay
+
+A static website application shows a ASCII cow saying a random fortune, base on docker-compose.
+
+![thumbnail](thumbnail.jpg)
+
+Docker composes two separate part of service:
+
+1. A python flask server to produce cowsay and fortune string
+2. A Xampp docker container host a website
+
+## Requirements
+
+- Docker
+- Docker-compose
+
+## Usage
+
+First run this command
+
+```console
+$ docker compose up
+```
+
+Then navigate your web browser to localhost:41062/www and enjoy the wisdom of cow!
+
+## TODOs
+
+- Fix bug: GET variable "char" do not work
