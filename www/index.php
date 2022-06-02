@@ -1,9 +1,10 @@
 <?php
+$url_base = "http://sageofcow:5000/say";
+
 if (array_key_exists("char", $_GET)) {
-  $char = $_GET["char"];
-  $url = "http://sageofcow:5000/say" . "?" . "char" . "=" . $char;
+  $url = $url_base . "?char=" . $_GET["char"];
 } else {
-  $url = "http://sageofcow:5000/say";
+  $url = $url_base;
 }
 
 $res = file_get_contents($url);
